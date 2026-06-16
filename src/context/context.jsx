@@ -29,6 +29,7 @@ const ContextProvider = (props) => {
 
       const query = prompt || input;
 
+      const response = await runChat(query);
       if (typeof response !== "string") {
         console.error("Invalid response:", response);
         setResultData(response?.content || "Something went wrong!");
