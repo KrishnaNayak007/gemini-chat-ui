@@ -30,7 +30,7 @@ const ContextProvider = (props) => {
       const query = prompt || input;
 
       const response = await runChat(query);
-      console.log("Gemini response:", response); // Log the full response
+      // console.log("Gemini response:", response); // Log the full response
 
       if (response) {
         setRecentPrompt(query);
